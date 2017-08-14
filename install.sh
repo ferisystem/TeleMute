@@ -74,8 +74,13 @@ sudo luarocks install Lua-cURL
 cd ..
 chmod 777 tg
 chmod 777 launch.sh
+chmod +x api.sh
+chmod +x cli.sh
+chmod +x autoapi.sh
+chmod +x autocli.sh
+chmod +x launch.sh
 RED='\033[0;31m'
 NC='\033[0m'
 CYAN='\033[0;36m'
-echo -e "${CYAN}Installation Completed! Create a bot with launch(./launch.sh)${NC}"
+echo -e "${CYAN}Installation Completed! Create a bot with ./launch.sh command or send ./autocli.sh for AutoRun. Note: Set --Token-- in ./api.sh${NC}"
 exit
