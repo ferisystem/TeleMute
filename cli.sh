@@ -1,7 +1,6 @@
 #!/bin/bash
 killall tg
-killall .telegram-cli
 killall nohup
+killall .telegram-cli
+killall apimode
 ./tg -s bot.lua
-
-
