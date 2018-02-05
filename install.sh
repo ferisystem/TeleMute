@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 wget "https://valtman.name/files/telegram-cli-1222"
 mv telegram-cli-1222 tg
+wget "https://valtman.name/files/telegram-bot-180205-nightly-linux"
+mv telegram-bot-180205-nightly-linux td
 sudo apt-get update 
 sudo apt-get upgrade
 sudo apt-get install libreadline-dev libssl-dev lua5.2 liblua5.2-dev git make unzip redis-server curl libcurl4-gnutls-dev
@@ -20,6 +22,7 @@ sudo apt-get install lua-expat
 sudo apt-get install libevent-dev 
 sudo apt-get install redis-server 
 sudo apt-get install libjansson-dev 
+sudo apt-get install libconfig++9v5 libstdc++6
 sudo apt-get install libpython-dev 
 sudo apt-get install expat libexpat1-dev 
 sudo apt-get update
@@ -59,11 +62,11 @@ sudo apt-get dist-upgrade
 sudo ppa-purge
 sudo apt-get update 
 sudo apt-get upgrade
- sudo apt-get install libreadline-dev libssl-dev lua5.2 liblua5.2-dev git make unzip redis-server curl libcurl4-gnutls-dev
+sudo apt-get install libreadline-dev libssl-dev lua5.2 liblua5.2-dev git make unzip redis-server curl libcurl4-gnutls-dev
 wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz 
- tar zxpf luarocks-2.2.2.tar.gz 
- cd luarocks-2.2.2
- ./configure; sudo make bootstrap 
+tar zxpf luarocks-2.2.2.tar.gz 
+cd luarocks-2.2.2
+./configure; sudo make bootstrap 
 sudo luarocks install luasec 
 sudo luarocks install luasocket 
 sudo luarocks install redis-lua 
