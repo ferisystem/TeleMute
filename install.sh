@@ -74,6 +74,7 @@ sudo luarocks install lua-term
 sudo luarocks install serpent
 sudo luarocks install dkjson 
 sudo luarocks install Lua-cURL
+sudo luarocks install luautf8
 cd ..
 chmod 777 tg
 chmod 777 launch.sh
